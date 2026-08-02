@@ -2,9 +2,9 @@
 
 ## 📖 Sobre o Projeto
 
-Este projeto realiza uma **Análise Exploratória de Dados (EDA)** em uma base fictícia de uma fintech, com o objetivo de identificar os principais fatores relacionados à inadimplência de clientes.
+Este projeto apresenta uma **Análise Exploratória de Dados (EDA)** aplicada a uma base fictícia de uma fintech, com o objetivo de identificar padrões relacionados à inadimplência e gerar insights que apoiem decisões de concessão de crédito.
 
-Durante a análise foram aplicadas técnicas de limpeza, tratamento, engenharia de atributos e visualização de dados para gerar insights que possam apoiar decisões de concessão de crédito e gestão de risco.
+Durante o desenvolvimento foram utilizadas técnicas de limpeza, tratamento de dados, engenharia de atributos e visualização de informações para compreender o perfil dos clientes e os fatores associados ao risco de crédito.
 
 > **Observação:** Os dados utilizados são fictícios e o projeto foi desenvolvido exclusivamente para fins de estudo e demonstração de habilidades em Análise de Dados.
 
@@ -32,19 +32,20 @@ Durante a análise foram aplicadas técnicas de limpeza, tratamento, engenharia 
 
 # 📂 Estrutura do Projeto
 
-```
-Case_Enova/
+```text
+CASE_ENOVA/
 │
 ├── Data/
 │   ├── case_inadimplencia_dataset.csv
 │   └── dicionario_de_dados.md
 │
 ├── Output/
-│   └── Graficos/
-│       ├── grafico_taxa_geral.png
-│       ├── grafico_score.png
-│       ├── grafico_restricao.png
-│       └── grafico_canal.png
+│   └── Output/
+│       └── Graficos/
+│           ├── grafico_taxa_geral.png
+│           ├── grafico_score.png
+│           ├── grafico_restricao.png
+│           └── grafico_canal.png
 │
 ├── main.py
 └── README.md
@@ -74,17 +75,17 @@ O projeto foi desenvolvido seguindo as seguintes etapas:
 
 Durante a análise foram identificados diversos padrões relevantes:
 
-- A carteira apresentou uma **taxa geral de inadimplência de aproximadamente 18%**, servindo como referência para comparação entre os segmentos.
+- A carteira apresentou uma **taxa geral de inadimplência** próxima de **18%**, servindo como referência para comparação entre os segmentos.
 
 - Clientes classificados como **Alto Risco** pelo score interno apresentaram uma taxa de inadimplência significativamente superior à média da carteira.
 
-- Clientes com **restrição de crédito** possuem uma probabilidade muito maior de inadimplência quando comparados aos clientes sem restrições.
+- Clientes com **restrição de crédito** possuem maior probabilidade de inadimplência quando comparados aos clientes sem restrições.
 
-- O canal de aquisição influencia diretamente o comportamento da carteira, indicando que alguns canais apresentam maior concentração de clientes inadimplentes.
+- O canal de aquisição influencia diretamente o comportamento da carteira, indicando que determinados canais concentram maior número de clientes inadimplentes.
 
 - A criação de faixas de idade, score e comprometimento de renda permitiu segmentar melhor os clientes e identificar grupos com maior exposição ao risco.
 
-- A etapa de engenharia de atributos tornou a análise mais interpretável e facilitou a construção das visualizações.
+- A engenharia de atributos tornou a análise mais interpretável e facilitou a construção dos indicadores.
 
 ---
 
@@ -95,7 +96,7 @@ A análise permitiu:
 - Identificar segmentos de maior risco.
 - Medir a inadimplência por faixa de score.
 - Avaliar o impacto da restrição de crédito.
-- Comparar canais de aquisição.
+- Comparar o desempenho entre diferentes canais de aquisição.
 - Criar indicadores que auxiliam decisões de concessão de crédito.
 
 ---
@@ -142,9 +143,9 @@ Com base nos resultados obtidos, algumas ações podem contribuir para reduzir o
 
 Utilizar score interno, histórico de restrições e comprometimento de renda como variáveis prioritárias na avaliação dos clientes.
 
-### ✔ Monitoramento contínuo
+### ✔ Monitoramento Contínuo
 
-Criar dashboards que acompanhem a inadimplência em tempo real por segmento de clientes.
+Desenvolver dashboards para acompanhar a inadimplência em tempo real por segmento de clientes.
 
 ### ✔ Estratégias por Canal
 
@@ -161,7 +162,7 @@ Como evolução do projeto, desenvolver modelos de Machine Learning para prever 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/Case_Enova.git
+git clone https://github.com/SEU-USUARIO/credit-default-analysis.git
 ```
 
 Instale as dependências:
@@ -170,7 +171,7 @@ Instale as dependências:
 pip install pandas numpy matplotlib seaborn
 ```
 
-Execute o projeto:
+Execute:
 
 ```bash
 python main.py
@@ -182,7 +183,7 @@ python main.py
 
 - Análise Exploratória de Dados (EDA)
 - Limpeza e tratamento de dados
-- Engenharia de Atributos (Feature Engineering)
+- Engenharia de Atributos
 - Estatística Descritiva
 - Segmentação de Clientes
 - Visualização de Dados
@@ -198,3 +199,4 @@ python main.py
 Estudante de Sistemas de Informação com foco em Análise de Dados.
 
 - LinkedIn: https://www.linkedin.com/in/gabriel-molinari-b85095352/
+
